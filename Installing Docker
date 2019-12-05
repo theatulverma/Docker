@@ -1,0 +1,43 @@
+$curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+#Add the Docker repository to APT sources:
+#sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+#sudo apt-get update
+apt-cache policy docker-ce
+Output of apt-cache policy docker-ce
+docker-ce:
+  Installed: (none)
+  Candidate: 18.06.1~ce~3-0~ubuntu
+  Version table:18.06.1~ce~3-0~ubuntu 500
+        500 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages
+ #sudo apt-get install -y docker-ce
+ #sudo systemctl status docker
+ #sudo usermod -aG docker ${USER}
+ #su - ${USER}
+ #id -nG
+ #sudo usermod -aG docker username
+ #docker [option] [command] [arguments]
+ #docker
+ #docker docker-subcommand --help
+ #docker info
+ #docker run hello-world
+ #docker search ubuntu
+ #docker pull ubuntu
+ #docker run ubuntu
+ #docker images
+ #docker run -it ubuntu
+ #root@9b0db8a30ad1:/#
+ apt-get update
+ #apt-get install -y nodejs
+ #docker ps
+ #docker ps -a
+ #docker ps -l
+ #docker start 9b0db8a30ad1 
+ docker stop xenodochial_neumann
+ #docker rm youthful_roentgen
+ #docker commit -m "What did you do to the image" -a "Author Name" container-id repository/new_image_name
+ #docker commit -m "added node.js" -a "sammy" d9b100f2f636 sammy/ubuntu-nodejs
+ #docker images
+ #docker login -u docker-registry-username
+ #docker tag sammy/ubuntu-nodejs docker-registry-username/ubuntu-nodejs
+ #docker push docker-registry-username/ubuntu-nodejs
+ #docker push sammy/ubuntu-nodejs
